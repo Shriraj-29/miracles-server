@@ -15,7 +15,7 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Contact <onboarding@miraclesofficial.in>',
+      from: 'Contact <onboarding-miracles@resend.dev>',
       to: [toEmail],
       subject: `Contact Form: ${selection}`,
       html: `
